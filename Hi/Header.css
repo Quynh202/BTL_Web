@@ -490,12 +490,3 @@ h6{
 #p2{
     margin-top: 1rem;
 }
-
-@media (min-width: 1000px)
-.three{
-    position: fixed;
-    top: 0 !important;
-    width: 100%;
-    z-index: 99;
-    left: 0;
-}
