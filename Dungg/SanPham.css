@@ -115,8 +115,19 @@ body{
     list-style: none;
     display: flex;
     margin-left: 5rem;
-    grid-gap: 2rem;
     
+}
+
+.three-first>ul>li {
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-first>ul>li:hover {
+    background-color: #fe9705;
 }
 
 .three-first>ul>li>a{
@@ -153,12 +164,13 @@ body{
 
 /************************************/
 .menu {
+    width: 630px;
     position: relative;
 }
 
 .subnav {
     position: absolute;
-    top: 34px;
+    top: 50px;
     left: 1rem;
     background-color: rgb(250, 249, 243);
     width: 1130px;
@@ -209,7 +221,8 @@ body{
 
 .subnav1 {
     position: absolute;
-    top: 34px;
+    top: 50px;
+    left: 384px;
     background-color: rgb(250, 249, 243);
     width: 180px;
     line-height: 40px;
