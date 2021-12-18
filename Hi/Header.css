@@ -8,20 +8,15 @@ body{
 /*   PHẦN HEADER */
 
 .hd {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -216px;
     width: 100%;
     height: 15rem;
     margin-top: 0;
     padding-top: 0;
     z-index: 1;
 }
-
-/* #nav .subnav li:hover a,
-#nav > li:hover > a {
-    color: #fff;
-    background-color: #fe9705;
-    line-height: 50px;
-} */
 
 /************************************/
 .menu {
@@ -30,7 +25,7 @@ body{
 
 .subnav {
     position: absolute;
-    top: 34px;
+    top: 50px;
     left: 1rem;
     background-color: rgb(250, 249, 243);
     width: 1130px;
@@ -81,7 +76,7 @@ body{
 
 .subnav1 {
     position: absolute;
-    top: 34px;
+    top: 50px;
     background-color: rgb(250, 249, 243);
     width: 180px;
     line-height: 40px;
@@ -194,8 +189,9 @@ body{
 
 /*********************************/
 
+
 .three{
-    position: relative;
+    position: absolute;
     display: flex;
     background-color: #80bb35;
     width: 100%;  
@@ -257,98 +253,6 @@ body{
     margin-top: 8px;
 }
 
-
-/************************************/
-.menu {
-    width: 630px;
-    position: relative;
-}
-
-.subnav {
-    position: absolute;
-    top: 50px;
-    left: 1rem;
-    background-color: rgb(250, 249, 243);
-    width: 1130px;
-    line-height: 45px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 5px 5px 5px #666; 
-    display: none;
-}
-
-.menu-header {
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-header > ul > li {
-    list-style: none;
-}
-
-.menu-header > ul > li:hover {
-    color: #80bb35;
-}
-
-.subnav::after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 24px;
-    background-color: transparent;
-    height: 20px;
-    width: 1130px;
-}
-
-.item-product:hover .subnav {
-    display: block;
-}
-
-/* ***************** */
-.menu {
-    position: relative;
-}
-
-.subnav1 {
-    position: absolute;
-    top: 50px;
-    left: 384px;
-    background-color: rgb(250, 249, 243);
-    width: 180px;
-    line-height: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-    display: none;
-    box-shadow: 5px 5px 5px #666;
-    -moz-box-shadow: 5px 5px 5px #666;
-    -webkit-box-shadow: 5px 5px 5px #666; 
-}
-
-.subnav1::after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 14px;
-    background-color: transparent;
-    height: 20px;
-    width: 180px;
-}
-
-.item-product:hover .subnav1 {
-    display: block;
-}
-
-.subnav1 > li:hover {
-    color: #80bb35;
-}
-
 /*     HẾT PHẦN HEADER    */
 
 /**************************************************/
@@ -357,7 +261,6 @@ body{
 /*  phần danh mục dm */
 
 .bd {
-    margin-top: 13rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -369,7 +272,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .dm{

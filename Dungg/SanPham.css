@@ -8,7 +8,9 @@ body{
 /*   PHẦN HEADER */
 
 .hd {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -216px;
     width: 100%;
     height: 15rem;
     margin-top: 0;
@@ -99,7 +101,7 @@ body{
 /*********************************/
 
 .three{
-    position: relative;
+    position: absolute;
     display: flex;
     background-color: #80bb35;
     width: 100%;  
@@ -200,6 +202,10 @@ body{
     color: #80bb35;
 }
 
+.sp {
+    background-color: #fe9705;
+}
+
 .subnav::after {
     content: '';
     position: absolute;
@@ -261,7 +267,6 @@ body{
 /*  phần danh mục dm */
 
 .bd {
-    margin-top: 15rem;
     width: 100%;
     display: flex;
     align-items: center;
