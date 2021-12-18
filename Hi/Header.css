@@ -211,7 +211,7 @@ body{
     list-style: none;
     display: flex;
     margin-left: 5rem;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     
 }
 
@@ -382,6 +382,8 @@ h2{
     text-align: center;
     background-color: antiquewhite;
     border-radius: 15px;
+    padding-top: 5px;
+    line-height: 10px;
 }
 
 .body-img:hover {
