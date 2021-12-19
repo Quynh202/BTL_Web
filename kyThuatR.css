@@ -1,0 +1,528 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    position:absolute;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*   PHẦN HEADER */
+
+.hd {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -216px;
+    width: 100%;
+    height: 15rem;
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 1;
+}
+
+/************************************/
+.menu {
+    position: relative;
+}
+
+.subnav {
+    position: absolute;
+    top: 50px;
+    left: 1rem;
+    background-color: rgb(250, 249, 243);
+    width: 1130px;
+    line-height: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666; 
+    display: none;
+}
+
+.menu-header {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-header > ul > li {
+    list-style: none;
+}
+
+.menu-header > ul > li:hover {
+    color: #80bb35;
+}
+
+.subnav::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 24px;
+    background-color: transparent;
+    height: 20px;
+    width: 1130px;
+}
+
+.item-product:hover .subnav {
+    display: block;
+}
+
+/* ***************** */
+.menu {
+    position: relative;
+}
+
+.subnav1 {
+    position: absolute;
+    top: 50px;
+    background-color: rgb(250, 249, 243);
+    width: 180px;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666; 
+}
+
+.subnav1::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 14px;
+    background-color: transparent;
+    height: 20px;
+    width: 180px;
+}
+
+.item-product:hover .subnav1 {
+    display: block;
+}
+
+.subnav1 > li:hover {
+    color: #80bb35;
+}
+
+.header{
+    background-color: #fff;
+}
+
+.one{
+    display: flex;
+    grid-gap: 1.5rem;
+    background-color: #80bb35;
+    color: #fff;
+}
+
+.one-left{
+    display: flex;
+}
+
+.wo1{
+    margin-left: 5rem;
+}
+
+.inout{
+    display: flex;
+    margin-left: 20%;
+    grid-gap: 1rem;
+    
+}
+
+.inout>a{
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+/*******************/
+
+.two{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    
+}
+
+.two-first{
+    display: flex;
+    margin-top: 13px;
+}
+
+.two-one{
+    margin-bottom: 3rem;
+}
+.imgt{
+    margin-right: 1rem;
+    height: 2rem;
+    
+}
+
+.wt{
+    margin: 0;
+}
+
+.two-fifth{
+    background-color: #fe9705;
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.giohang{
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+    color: #fff;
+}
+
+.wgiohang{
+    margin: 0;
+}
+
+/*********************************/
+
+
+.three{
+    position: absolute;
+    display: flex;
+    background-color: #80bb35;
+    width: 100%;  
+    align-items: center;
+    height: 50px;
+}
+
+.three-first{
+    display: flex;
+}
+
+.three-first>ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5rem;
+    
+}
+
+.three-first>ul>li {
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-first>ul>li:hover {
+    background-color: #fe9705;
+}
+
+.three-first>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.list{
+    margin-left: 5rem
+}
+
+.search{
+    display: flex;
+    margin-left: 14rem;
+    background-color: #fff;
+    width: 16rem;
+    height: 2rem;
+    border-radius: 8px;
+}
+
+.input{
+    margin-right: 3rem;
+    height: 1.2rem;
+    margin-top: 4px;
+    margin-left: 6px;
+    border: none;
+    outline: none;
+}
+
+.fa-search{
+    margin-top: 8px;
+}
+
+/*     HẾT PHẦN HEADER    */
+
+/**************************************************/
+/*       PHẦN BODY    */
+/*  phần danh mục dm */
+.dm{
+    margin: 110px;
+    margin-top: 1rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dm-content{
+    height: 400px;
+    width: 21rem;
+    background-color:white;
+    border: 1px gray solid;
+    border-radius: 15px;
+    margin-top: 30px;
+} 
+
+.danhmuc{
+    border-radius: 15px;
+    background: #80bb35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 0;
+}
+h2{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: none;
+    top: 0;
+    
+}
+.dm-items{
+    margin: 0;
+    padding: 0px 40px;
+    height: 50px;
+}
+.dm-items-all{
+    height: 416px;
+}
+.dm-items-all>ul{
+    padding-left: 0;
+}
+.dm-items-all>ul>li{
+    list-style: none;
+    border-bottom: 1px gray solid;
+    height: 2.7rem;
+    padding-left: 2rem;
+}
+.fa-chevron-right {
+    font-size: 18px;
+}
+.anitem>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin-left: 0.5rem;
+}
+
+.anitem{
+    padding-top: 1rem;
+    margin-top: 15px;
+} 
+.between {
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 150px;
+    margin-top: 400px;
+}
+.tag {
+    border: 1px solid gray;
+    width: 140px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tag>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.left-bottom {
+    margin-top: 5.5rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 570px;
+}
+.tin>a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    margin: 10px;
+    padding-bottom: -10px;
+    padding-top: 15px;
+    
+}
+
+.tin>img {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    padding-bottom: -10px;
+    padding-top: 15px;
+}
+.tin {
+    margin: 10px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    display: flex;
+}
+
+.modau{
+    display: flex;
+    width: 100%; 
+    margin-top: 60px;
+}
+
+.modau>ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5rem;
+    font-size: 25px;
+    
+}
+
+.modau>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.modau>ul>li>a:hover {
+    color: chartreuse;
+} 
+
+.right {
+    margin-left: 70px;
+    font-size: 18px;
+    width: 70%;
+}
+ 
+.form {
+    margin-top: 30px;
+}
+.right-one {
+    margin-bottom: 70px;
+}
+.right-two {
+    border-top: 1px solid gray;
+}
+.right-two>p {
+    margin-top: 50px;
+}
+#ten {
+    font-size: 21px;
+    font-family: "Times New Roman", Times, serif;
+    width: 645px;
+    padding: 10px;
+
+    border-radius: 8px;
+}
+#mail {
+    font-size: 21px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    width: 645px;
+    padding: 8px;
+    border-radius: 8px;
+}
+#note {
+    font-size: 21px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 8px;
+    padding: 8px;
+    width: 645px;
+}
+#button {
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 8px;
+    padding: 8px 50px;
+    color: aliceblue;
+    background-color: #80bb35;
+} 
+.last-img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin: 70px;
+}
+
+/* FOOTER */
+#footer {
+    background-color: #569603e0;
+    height: 20rem;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    width: 35%;
+    display: block;
+}
+
+.social > p {
+    color: #fff;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-social {
+    padding-bottom: 10px;
+}
+
+#fanpage {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.heading-contact {
+    color: #fff;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.social-name {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.orther-info {
+    width: 18%;
+    display: block;
+}
+
+.list-info {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.list-info > li:hover {
+    color: #fe9705;
+}
+
