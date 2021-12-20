@@ -312,6 +312,12 @@ h2{
 .fa-chevron-right {
     font-size: 18px;
 }
+.anitem:hover{
+    color: #9be43c;
+}
+.anitem>a:hover{
+    color: #9be43c;
+}
 .anitem>a{
     text-decoration: none;
     font-size: 18px;
@@ -349,7 +355,7 @@ h2{
     margin-top: 5.5rem;
     border: 1px solid gray;
     border-radius: 15px;
-    height: 570px;
+    height: 560px;
 }
 .tin>a {
     text-decoration: none;

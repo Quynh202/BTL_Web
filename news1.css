@@ -1,23 +1,20 @@
-/* RESET CSS */
-
-
 body{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     position:absolute;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    overflow-x:hidden;
 }
-   /* PHẦN HEADER */ 
+
+/*   PHẦN HEADER */
 
 .hd {
     position: -webkit-sticky;
     position: sticky;
     top: -216px;
-    /* width: 100%; */
+    width: 100%;
     height: 15rem;
-    
+    margin-top: 0;
+    padding-top: 0;
     z-index: 1;
 }
 
@@ -70,9 +67,6 @@ body{
 
 .item-product:hover .subnav {
     display: block;
-}
-.paper {
-    background-color: #fe9705;
 }
 
 /* ***************** */
@@ -262,24 +256,18 @@ body{
 /*     HẾT PHẦN HEADER    */
 
 /**************************************************/
-
 /*       PHẦN BODY    */
 /*  phần danh mục dm */
-
 .dm{
-    margin: 95px;
-    margin-top: 5rem; 
+    margin: 110px;
+    margin-top: 1rem; 
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    width: 100%;
-    /*--------------------------------------------- */
+    flex-direction: row;
+    justify-content: space-between;
 }
 .dm-content{
     height: 400px;
-    width: 25%;
-    /* width: 21rem; */
-    /*--------------------------------------------- */
+    width: 21rem;
     background-color:white;
     border: 1px gray solid;
     border-radius: 15px;
@@ -321,11 +309,8 @@ h2{
     height: 2.7rem;
     padding-left: 2rem;
 }
-.anitem:hover{
-    color: #9be43c;
-}
-.anitem>a:hover{
-    color: #9be43c;
+.fa-chevron-right {
+    font-size: 18px;
 }
 .anitem>a{
     text-decoration: none;
@@ -333,7 +318,12 @@ h2{
     color: black;
     margin-left: 0.5rem;
 }
-
+.anitem:hover{
+    color: #9be43c;
+}
+.anitem>a:hover{
+    color: #9be43c;
+}
 .anitem{
     padding-top: 1rem;
     margin-top: 15px;
@@ -364,15 +354,16 @@ h2{
     margin-top: 5.5rem;
     border: 1px solid gray;
     border-radius: 15px;
-    height: 570px;
+    height: 560px;
 }
 .tin>a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     color: black;
     margin: 10px;
-    padding-bottom: 10px;
-        
+    padding-bottom: -10px;
+    padding-top: 15px;
+    
 }
 
 .tin>img {
@@ -386,60 +377,89 @@ h2{
     margin: 10px;
     border-bottom: 1px solid gray;
     margin-top: 20px;
-    display: flex;    
-}
-.right {
-    margin-left: 30px;
-}
-.chu {
     display: flex;
 }
-h3 {
-    margin-top: 33px;
-    font-size: 35px;
-}
-.content-title {
-    font-weight: bold;
-}
-.content-title:hover {
-    color: #9be43c;
- }
-.title {
-    margin-top: 45px;
-    font-size: 20px;
-}
-.noidung-content {
+
+.modau{
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    border: 1px solid gray;
-    width: 756px; 
-    /*--------------------------------------------- */
-    height: 210px;
-    padding: 20px;
-    border-radius: 15px;
+    width: 100%; 
+    margin-top: 60px;
 }
-.noidung-content>a {
-    text-decoration: none;
-    color: black;
-}
-.noidung-content>img {
-    width: 18rem;
-    height: 200px;
-}
-.noidung-phai {
-    margin-left: 22px;
-    font-size: 18px;
+
+.modau>ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5rem;
+    font-size: 25px;
     
 }
 
+.modau>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.modau>ul>li>a:hover {
+    color: chartreuse;
+} 
+
+.right {
+    margin-left: 70px;
+    font-size: 18px;
+    width: 70%;
+}
+ 
+.form {
+    margin-top: 30px;
+}
+.right-one {
+    margin-bottom: 70px;
+}
+.right-two {
+    border-top: 1px solid gray;
+}
+.right-two>p {
+    margin-top: 50px;
+}
+#ten {
+    font-size: 21px;
+    font-family: "Times New Roman", Times, serif;
+    width: 645px;
+    padding: 10px;
+
+    border-radius: 8px;
+}
+#mail {
+    font-size: 21px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    width: 645px;
+    padding: 8px;
+    border-radius: 8px;
+}
+#note {
+    font-size: 21px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 8px;
+    padding: 8px;
+    width: 645px;
+}
+#button {
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 8px;
+    padding: 8px 50px;
+    color: aliceblue;
+    background-color: #80bb35;
+} 
 .last-img{
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
     margin: 70px;
 }
-
 
 /* FOOTER */
 #footer {
@@ -484,7 +504,6 @@ h3 {
     color: #fff;
     padding-bottom: 15px;
     font-weight: 500;
-    font-size: 20px;
 }
 
 .social-name {
@@ -512,12 +531,3 @@ h3 {
     color: #fe9705;
 }
 
-
-
-.dm-items-all > ul > li:hover {
-    color: #80bb35;
-}
-
-.anitem > a:hover {
-    color: #80bb35;
-}

@@ -115,7 +115,7 @@
             <div class="find">
                 <div class="search">
                     <input type="text" class="input" placeholder="Tìm sản phẩm">
-                    <i class="fas fa-search"></i>
+                    <i onclick="alert('Sản phẩm không tồn tại')" class="fas fa-search"></i>
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@
                 <input type="text" name="dt" id="dt" placeholder="Điện thoại*"><br>
                 <textarea name="note" id="note" cols="50" rows="5"placeholder="Nhập nội dung*"></textarea>   
             </form>
-            <button type="button" id="button"> Gửi liên hệ </button>
+            <button type="button" id="button" onclick="alert('Thông tin của bạn đã được gửi')"> Gửi liên hệ </button>
         </div>
         <div class="content">
             <div class="right">
@@ -150,7 +150,7 @@
                 </div>
                 <div class="item ">
                     <p >Số điện thoại </p>
-                    <a href="">19006750</a>
+                    <a href="" onclick="alert('Không thể kết nối')">19006750</a>
                     <p>Thứ 2 - Chủ nhật: 9:00 - 18:00</p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="item">
                     <p class="title">Email</p>
-                    <a href="">support@sapo.vn</a>
+                    <a href="" onclick="alert('Không thể kết nối')">support@sapo.vn</a>
                 </div>
             </div>
         </div>

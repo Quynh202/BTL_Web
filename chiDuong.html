@@ -115,7 +115,7 @@
             <div class="find">
                 <div class="search">
                     <input type="text" class="input" placeholder="Tìm sản phẩm">
-                    <i class="fas fa-search"></i>
+                    <i onclick="alert('Sản phẩm không tồn tại')" class="fas fa-search"></i>
                 </div>
             </div>
         </div>
@@ -129,20 +129,22 @@
             <h3>Danh sách cửa hàng</h3>
             <p>Chọn của hàng bạn muốn chỉ đường</p>
             <div class="icon">
-                <button type="button" id="button"><i class="fa fa-map-marker"></i> 01 Hồ Tùng Mậu, Hà Nội </button>
+                <button type="button" id="button" onclick="alert('Không thể xác định địa điểm, mời nhập nội dung đầy đủ hơn')"><i class="fa fa-map-marker"></i> 01 Hồ Tùng Mậu, Hà Nội </button>
             </div>
             <div class="icon">
-                <button type="button" id="button1"> <i class="fa fa-map-marker"></i> 26 Trần Thái Tông, Hà Nội </button>
+                <button type="button" id="button1" onclick="alert('Không thể xác định địa điểm, mời nhập nội dung đầy đủ hơn')"> <i class="fa fa-map-marker"></i> 26 Trần Thái Tông, Hà Nội </button>
             </div>
             <div class="icon"> 
-                <button type="button" id="button2"><i class="fa fa-map-marker"></i> 01 Nguyễn Trái, Thanh Xuân, Hà Nội </button>
+                <button type="button" id="button2" onclick="alert('Không thể xác định địa điểm, mời nhập nội dung đầy đủ hơn')"><i class="fa fa-map-marker"></i> 01 Nguyễn Trái, Thanh Xuân, Hà Nội </button>
             </div>
             <h3>Nhập địa chỉ muốn bắt đầu:</h3>
             <p>Nhập vào đây địa chỉ cần tìm:</p>
             <form class="form">
-                <input type="text" name="ten" id="ten" placeholder="Địa chỉ..."><br>
+                <input type="text" name="ten" id="ten" placeholder="Địa chỉ..." > 
+                    <!-- <i class="fas fa-search-location"  onclick="alert('Địa chỉ tìm kiếm không tồn tại')"></i> -->
+                <br>
             </form>  
-            <p>Bạn cần cho phép trình duyệt cung cấp vị trí hiện tại.</p> 
+            <p  onclick="alert('Địa chỉ tìm kiếm không tồn tại')">Bạn cần cho phép trình duyệt cung cấp vị trí hiện tại.</p> 
         </div>
 
         <div class="map">
