@@ -416,9 +416,10 @@ h2{
     padding-top: 14px;
     padding-left: 8px;
 }
-#button2 {
+.button2 {
     margin-left: 20px;
     padding: 0px 30px;
+    height: 45px;
     font-size: 15px;
     background-color: #80bb35;
     color: white;
@@ -443,6 +444,50 @@ h2{
     font-size: 18px;
     line-height: 1.5rem;
 }
+
+/**********************************/
+
+.tt{
+    display: flex;
+    margin-left: 3.4rem;
+    margin-top: 5rem;
+}
+.rong{
+    width: 40%;
+    height: 1.3px;
+    background-color: orangered;
+    margin-top: 1rem;
+}
+
+.tin1{
+    background-color: #80bb35;
+    height: 2.3rem;
+    width: 16%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tin1>a{
+    text-decoration: none;
+}
+.tin1>a>p{ 
+    margin-top: 12px;
+    color: #fff;
+}
+
+.chu1{
+    text-align: center;
+    width: 25%;
+    margin-left: 38%;
+    font: italic ;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+/************************************************/
+
 .last-img{
     display: flex;
     justify-content: space-around;
